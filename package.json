@@ -1,8 +1,8 @@
 {
   "name": "mockaf",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "A REST API that provides Africa-related mock JSON data",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -17,7 +17,7 @@
     "pg": "8.6.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Bamba Fall"
   },
   "strapi": {
     "uuid": "a3eda46f-53aa-48d9-baf2-9be9ec314666"
