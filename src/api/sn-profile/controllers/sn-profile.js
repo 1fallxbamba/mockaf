@@ -25,6 +25,19 @@ module.exports = createCoreController('api::sn-profile.sn-profile', () => ({
     
         return profiles;
     
+    },
+
+    async findOne(ctx) {
+
+        const profiles = [];
+
+        const {data} = await super.findOne(ctx);
+
+        profile.id = data.id;
+        profile.fullName = data.attributes.fullName;
+    
+        return profile;
+    
     }
 
 }));
