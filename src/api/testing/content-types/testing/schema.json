@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "testings",
+  "info": {
+    "singularName": "testing",
+    "pluralName": "testings",
+    "displayName": "testing"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "meta"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tt": {
+      "type": "string"
+    }
+  }
+}

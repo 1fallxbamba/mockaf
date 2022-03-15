@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sn_profiles",
+  "info": {
+    "singularName": "sn-profile",
+    "pluralName": "sn-profiles",
+    "displayName": "SN_Profile",
+    "description": "Senegalese User Profiles"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "updatedAt",
+      "publishedAt"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string"
+    }
+  }
+}
