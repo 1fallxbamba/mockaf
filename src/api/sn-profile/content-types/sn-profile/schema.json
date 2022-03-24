@@ -4,19 +4,43 @@
   "info": {
     "singularName": "sn-profile",
     "pluralName": "sn-profiles",
-    "displayName": "SN_Profile",
-    "description": "Senegalese User Profiles"
+    "displayName": "SN_Profile"
   },
   "options": {
     "draftAndPublish": true,
     "privateAttributes": [
       "updatedAt",
-      "publishedAt"
+      "meta"
     ]
   },
   "pluginOptions": {},
   "attributes": {
     "fullName": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "M",
+        "F"
+      ]
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "json"
+    },
+    "picture": {
       "type": "string"
     }
   }
