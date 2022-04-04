@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sn_regions",
+  "info": {
+    "singularName": "sn-region",
+    "pluralName": "sn-regions",
+    "displayName": "SN_Region"
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "publishedAt"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
