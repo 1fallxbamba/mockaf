@@ -4,7 +4,7 @@
  *  sn-profile controller
  */
 
-const profile = {
+let profile = {
     id: Number,
     fullName: String,
     username: String,
