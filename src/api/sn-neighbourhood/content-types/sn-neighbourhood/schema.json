@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sn_neighbourhoods",
+  "info": {
+    "singularName": "sn-neighbourhood",
+    "pluralName": "sn-neighbourhoods",
+    "displayName": "SN_Neighbourhood",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true,
+    "privateAttributes": [
+      "createdAt",
+      "updatedAt",
+      "publishedAt"
+    ]
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "subs": {
+      "type": "json"
+    }
+  }
+}

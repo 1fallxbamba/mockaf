@@ -1,21 +1,10 @@
 'use strict';
 
+const Profile = require('../../../models/profile');
+
 /**
  *  sn-profile controller
  */
-
-const profile = {
-    id: Number,
-    fullName: String,
-    username: String,
-    gender: String,
-    age: Number,
-    email: String,
-    phone: String,
-    address: Object,
-    picture: String,
-    createdAt: Date
-};
 
 const { createCoreController } = require('@strapi/strapi').factories;
 
@@ -28,17 +17,17 @@ module.exports = createCoreController('api::sn-profile.sn-profile', () => ({
         const { data } = await super.find(ctx);
 
         data.forEach(el => {
-            profile.id = el.id;
-            profile.fullName = el.attributes.fullName;
-            profile.username = el.attributes.username;
-            profile.gender = el.attributes.gender;
-            profile.age = el.attributes.age;
-            profile.email = el.attributes.email;
-            profile.phone = el.attributes.phone;
-            profile.address = el.attributes.address;
-            profile.picture = el.attributes.picture;
-            profile.createdAt = el.attributes.createdAt;
-            profiles.push(profile)
+            profiles.push(new Profile(
+                el.id,
+                el.attributes.fullName,
+                el.attributes.username,
+                el.attributes.age,
+                el.attributes.gender,
+                el.attributes.phone,
+                el.attributes.email,
+                el.attributes.address,
+                el.attributes.picture
+            ))
         });
 
         return profiles;
@@ -49,10 +38,17 @@ module.exports = createCoreController('api::sn-profile.sn-profile', () => ({
 
         const { data } = await super.findOne(ctx);
 
-        profile.id = data.id;
-        profile.fullName = data.attributes.fullName;
-
-        return profile;
+        return new Profile(
+            data.id,
+            data.attributes.fullName,
+            data.attributes.username,
+            data.attributes.age,
+            data.attributes.gender,
+            data.attributes.phone,
+            data.attributes.email,
+            data.attributes.address,
+            data.attributes.picture
+        );
 
     }
 
