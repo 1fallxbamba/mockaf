@@ -49,7 +49,6 @@ module.exports = createCoreController('api::sn-profile.sn-profile', () => ({
             data.attributes.address,
             data.attributes.picture
         );
-
     }
 
 }));
