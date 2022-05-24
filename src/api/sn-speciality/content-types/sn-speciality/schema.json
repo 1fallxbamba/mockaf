@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sn_specialities",
+  "info": {
+    "singularName": "sn-speciality",
+    "pluralName": "sn-specialities",
+    "displayName": "SN_Speciality",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cookingTime": {
+      "type": "integer"
+    },
+    "ingredients": {
+      "type": "json"
+    }
+  }
+}
